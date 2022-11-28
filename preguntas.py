@@ -21,10 +21,10 @@ def pregunta_01():
     df = pd.read_csv('insurance.csv')
 
     # Asigne la columna `charges` a la variable `y`.
-     y = df['charges'].values
+    y = df['charges'].values
 
     # Asigne una copia del dataframe `df` a la variable `X`.
-     X = df.copy()
+    X = df.copy()
 
     # Remueva la columna `charges` del DataFrame `X`.
     X = X.drop('charges', axis = 1)
